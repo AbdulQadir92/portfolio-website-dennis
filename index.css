@@ -6,6 +6,12 @@
     --secondaryColor: #E8E8E8;
 
     --borderColor: lightgrey;
+
+    --previewShadowColor: lightgoldenrodyellow;
+}
+
+.main-container {
+    margin-bottom: 200px;
 }
 
 * {
@@ -31,7 +37,6 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Intro Section */
 .intro {
-    width: 100%;
     background-color: var(--secondaryBg);
     width: 90%;
     padding-left: 5%;
@@ -229,7 +234,7 @@ h1, h2, h3, h4, h5, h6 {
     height: 120px;
     padding-top: 30px;
     padding-left: 30px;
-    background-color: lightgoldenrodyellow;
+    background-color: var(--previewShadowColor);
 }
 
 @media screen and (max-width: 576px) {
@@ -244,4 +249,101 @@ h1, h2, h3, h4, h5, h6 {
         height: auto;
         margin-right: 30px;
     }
+}
+
+
+/* About Section */
+.about {
+    width: 90%;
+    padding-top: 50px;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 50px;
+    background-color: var(--mainBg);
+}
+
+@media screen and (max-width: 870px) {
+    .about {
+        grid-template-columns: 1fr;
+    }
+    .right-column {
+        margin-top: 50px;
+    }
+}
+
+.more-about {
+    border-bottom: 2px solid var(--borderColor);
+}
+
+.more-about h3 {
+    margin: 10px 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+.more-about p {
+    margin: 20px 0 10px;
+    text-indent: 20px;
+    text-align: justify;
+}
+
+.expertise {
+    border-bottom: 2px solid var(--borderColor);
+}
+
+.expertise h3 {
+    margin: 10px 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+.expertise p {
+    margin: 20px 0 0;
+    text-align: justify;
+}
+
+.expertise a {
+    display: inline-block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: lightseagreen;
+    margin-top: 5px;
+}
+
+.skills {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--previewShadowColor);
+    padding: 15px;
+    font-weight: bold;
+}
+
+.skills div > div {
+    margin: 5px 0;
+}
+
+.right-column {
+    text-align: center;
+}
+
+.right-column img {
+    width: 100%;
+    height: 70%;
+    border: 1px solid var(--borderColor);
+}
+
+.right-column h2 {
+    margin: 40px 0 15px;
+    font-weight: bold;
+}
+
+.right-column > div {
+    font-size: 14px;
+}
+
+.right-column > div > a {
+    text-decoration: none;
+    color: lightseagreen;
 }
