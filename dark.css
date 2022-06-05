@@ -1,13 +1,13 @@
 
 :root {
-    --mainBg:#28282B; 
-    --secondaryBg:#45454a;
+    --mainBg:#05081c; 
+    --secondaryBg: #0a0d36;
 
     --mainColor: white;
     --secondaryColor: lightgrey;
 
-    --borderColor: #616169;
+    --borderColor: #131e6b;
 
-    --previewBoxBg: rgba(0,0,0,0.5);
-    --previewShadowColor: #45454a;
+    --previewBoxBg: rgba(5, 8, 28, 0.5);
+    --previewShadowColor: #0a0d36;
 }

@@ -65,6 +65,7 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
     padding: 7px;
     background-color: var(--secondaryBg);
+    border-bottom: 2px solid var(--borderColor);
     border-radius: 5px 5px 0 0;
 }
 
@@ -154,7 +155,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .theme-dot-2 {
-    background-color: #28282B;
+    background-color: #05081c; 
 }
 
 .theme-dot-3 {
