@@ -3,10 +3,11 @@
     --secondaryBg: #E8E8E8;
 
     --mainColor: black;
-    --secondaryColor: #E8E8E8;
+    --secondaryColor: #303030;
 
     --borderColor: lightgrey;
 
+    --previewBoxBg: rgba(255,255,255,0.5);
     --previewShadowColor: lightgoldenrodyellow;
 }
 
@@ -153,15 +154,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .theme-dot-2 {
-    background-color: black;
+    background-color: #28282B;
 }
 
 .theme-dot-3 {
-    background-color: lightgreen;
+    background-color: #013220;
 }
 
 .theme-dot-4 {
-    background-color: purple;
+    background-color: #461257;
 }
 
 .theme-settings > p {
@@ -186,10 +187,12 @@ h1, h2, h3, h4, h5, h6 {
     text-align: justify;
     width: 300px;
     height: 120px;
-    background-color: rgba(255,255,255,0.5);
+    /* background-color: rgba(255,255,255,0.5); */
+    background-color: var(--previewBoxBg);
     border: 1px solid lightseagreen;
     padding: 20px;
     position: relative;
+    color: var(--mainColor);
 }
 
 .preview-box h2 {
@@ -227,8 +230,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .preview-shadow {
-    width: 300px;
-    height: 120px;
+    width: 310px;
+    height: 130px;
     padding-top: 30px;
     padding-left: 30px;
     background-color: var(--previewShadowColor);
@@ -275,12 +278,14 @@ h1, h2, h3, h4, h5, h6 {
 .more-about h2 {
     margin: 10px 0;
     font-weight: bold;
+    color: var(--mainColor);
 }
 
 .more-about p {
     margin: 20px 0 10px;
     text-indent: 20px;
     text-align: justify;
+    color: var(--secondaryColor);
 }
 
 .expertise {
@@ -290,12 +295,14 @@ h1, h2, h3, h4, h5, h6 {
 .expertise h2 {
     margin: 10px 0;
     font-weight: bold;
+    color: var(--mainColor);
 }
 
 .expertise p {
     margin: 20px 0 0;
     text-align: justify;
     text-indent: 20px;
+    color: var(--secondaryColor);
 }
 
 .expertise a {
@@ -316,8 +323,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .skills div > div {
     margin: 5px 0;
-    color: var(--mainColor);
-    opacity: 0.8;
+    color: var(--secondaryColor);
 }
 
 .right-column {
@@ -333,10 +339,12 @@ h1, h2, h3, h4, h5, h6 {
 .right-column h2 {
     margin: 40px 0 15px;
     font-weight: bold;
+    color: var-(--mainColor);
 }
 
 .right-column > div {
     font-size: 14px;
+    color: var(--secondaryColor);
 }
 
 .right-column > div > a {
@@ -356,6 +364,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 0 30px;
     text-align: center;
     font-weight: bold;
+    color: var(--mainColor);
 }
 
 .posts-holder {
@@ -379,13 +388,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .post img {
     width: 100%;
-    height: 200px;
+    height: 180px;
     border-radius: 5px 5px 0 0;
 }
 
 .post h3 {
     font-weight: bold;
     margin: 0 0 15px;
+    color: black;
 }
 
 .post p {
@@ -419,6 +429,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 30px;
     text-align: center;
     font-weight: bold;
+    color: var(--mainColor);
 }
 
 .contact form {
@@ -450,6 +461,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .contact form label {
     margin-bottom: 3px;
+    color: var(--mainColor);
 }
 
 .contact form input, textarea {
@@ -457,6 +469,8 @@ h1, h2, h3, h4, h5, h6 {
     border: 2px solid var(--borderColor);
     border-radius: 3px;
     transition: 0s;
+    background-color: var(--mainBg);
+    color: var(--mainColor);
 }
 
 .contact form textarea {
@@ -464,8 +478,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .contact form input:focus, textarea:focus {
-    border: 2px solid var(--previewShadowColor);
-    outline: 1px solid var(--previewShadowColor);
+    border: 2px solid var(--borderColor);
+    outline: 2px solid var(--borderColor);
 }
 
 .btn-div {
@@ -476,13 +490,13 @@ h1, h2, h3, h4, h5, h6 {
 .btn-div button {
     display: block;
     padding: 5px 20px;
-    background-color: var(--mainColor);
-    color: var(--secondaryColor);
+    background-color: var(--mainBg);
+    color: var(--mainColor);
     border-radius: 5px;
     cursor: pointer;
 }
 
-.btn-div button:hover {
-    background-color: var(--secondaryColor);
-    color: var(--mainColor);
-}
+/* .btn-div button:hover {
+    background-color: var(--secondaryBg);
+    color: var(--mainBg);
+} */

@@ -1,0 +1,13 @@
+
+:root {
+    --mainBg:#28282B; 
+    --secondaryBg:#45454a;
+
+    --mainColor: white;
+    --secondaryColor: lightgrey;
+
+    --borderColor: #616169;
+
+    --previewBoxBg: rgba(0,0,0,0.5);
+    --previewShadowColor: #45454a;
+}
