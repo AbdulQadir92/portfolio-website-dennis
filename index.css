@@ -10,9 +10,6 @@
     --previewShadowColor: lightgoldenrodyellow;
 }
 
-.main-container {
-    margin-bottom: 200px;
-}
 
 * {
     margin: 0;
@@ -409,4 +406,83 @@ h1, h2, h3, h4, h5, h6 {
     color: lightseagreen;
     font-size: 15px;
     margin-bottom: 10px;
+}
+
+
+/* Contact Section */
+.contact {
+    padding: 50px 5%;
+    background-color: var(--mainBg);
+}
+
+.contact h2 {
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.contact form {
+    width: 50%;
+    margin: auto;
+    background-color: var(--secondaryBg);
+    padding: 30px 30px 5px;
+    border: 1px solid var(--borderColor);
+    border-radius: 5px;
+}
+
+.contact form > div {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    margin-bottom: 15px;
+}
+
+@media screen and (max-width: 992px) {
+    .contact form {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contact form > div {
+        grid-template-columns: 1fr;
+    }
+}
+
+.contact form label {
+    margin-bottom: 3px;
+}
+
+.contact form input, textarea {
+    padding: 5px;
+    border: 2px solid var(--borderColor);
+    border-radius: 3px;
+    transition: 0s;
+}
+
+.contact form textarea {
+    resize: vertical;
+}
+
+.contact form input:focus, textarea:focus {
+    border: 2px solid var(--previewShadowColor);
+    outline: 1px solid var(--previewShadowColor);
+}
+
+.btn-div {
+    display: flex !important;
+    justify-content: flex-end !important;
+}
+
+.btn-div button {
+    display: block;
+    padding: 5px 20px;
+    background-color: var(--mainColor);
+    color: var(--secondaryColor);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-div button:hover {
+    background-color: var(--secondaryColor);
+    color: var(--mainColor);
 }
